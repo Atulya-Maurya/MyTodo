@@ -1,0 +1,45 @@
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+*{
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  /* background-color: aquamarine; */
+}
+
+.container{
+  /* background-color: rgb(118, 110, 110); */
+  border: 2px solid black;
+  width: 50vw;
+  /* height: 70vh; */
+  height: auto;
+  min-height: 30rem;
+  margin: auto;
+  position: relative;
+  top: 2rem;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* box-shadow: 0px 2px 4px 0px rgb(14 33 37 / 55%), 0px 2px 16px 0px rgb(22 26 26 / 65%); */
+  background-color: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--blueCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  
+}
+
+@media (max-width:400px){
+    
+  .container {
+    height: 80vh;
+    width: 90vw;
+  }
+}

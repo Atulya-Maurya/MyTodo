@@ -1,0 +1,127 @@
+.sec-Container{
+    /* border: 1px solid black; */
+    height: 8rem;
+    height: auto;
+    
+    /* position: relative; */
+
+}
+.addTodo {
+    /* background-color: rgba(0, 0, 0, 0.187); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+
+.greeting{
+    position: relative;
+    left: -3rem;
+    margin: 1rem 0rem ;
+    /* border: 2px solid green; */
+}
+
+.add{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 7px solid #feddfc;
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    margin: 1rem 0rem ;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 #feddfc, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 15rem;
+    
+}
+
+/* blur */
+.blur {
+    position: absolute;
+    width: 30rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    /* top: -18%;
+    left: 56%; */
+    filter: blur(72px);
+  }
+.t-blur1{
+    right: -13rem;
+    top: -5rem;
+}
+.t-blur2{
+    left: -16rem;
+    top: 14rem;
+    filter: blur(150px);
+}
+input {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 1rem; 
+    height: auto;
+    width: fit-content;
+    text-align: left;
+}
+.desc{
+    /* background-color: #ffffff00; */
+    border: none;
+    border-radius: 10px;
+   
+}
+
+.btn{
+    font-size: 2rem;
+    position: absolute;
+    right: 0.7rem;
+    top: 2.8rem;
+    border: none;
+    background-color: #edd0ff00;
+    color: rgb(49, 40, 40);
+}
+.btn:hover{
+    color: green;
+    transition: 0.5s ease-in;
+}
+
+
+@media (max-width:400px){
+    .sec-Container{
+        /* border: 1px solid black; */
+        height: 17rem;
+    
+    }
+    
+    .addTodo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .add{
+        width: 70vw;
+        /* width: auto; */
+    }
+    .greeting{
+        position: static;
+        /* left: -3rem; */
+        margin: 1rem auto ;
+        /* border: 2px solid green; */
+    }
+    .t-blur1{
+        width: 18rem;
+        left: -2rem;
+        top: -5rem;
+    }
+    .t-blur2{
+        left: -13rem;
+        top: 23rem;
+        filter: blur(120px);
+    }
+   
+
+}
